@@ -1,0 +1,57 @@
+.formTextInput {
+  width: 100%;
+
+  &-inner {
+    display: flex;
+    width: 100%;
+
+    .ant-form-item {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    border: solid 1px $form-border;
+    background-color: $form-bg !important;
+    color: $form-fontColor;
+    line-height: $form-height;
+    font-size: $form-fontSize;
+    height: $form-height;
+    margin-top: 6px;
+    border-radius: 4px;
+    padding: 0 12px;
+
+    &:focus {
+      border: solid 1px $form-border-focus !important;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08) !important;
+    }
+
+    &:hover {
+      border: solid 1px $form-border-focus !important;
+    }
+  }
+
+  &--password {
+    input {
+      color: $form-fontColor;
+      line-height: 1.44;
+      font-weight: 500;
+      font-size: $form-fontSize;
+      background-color: $form-bg !important;
+    }
+
+    .formTextInput__input {
+      padding-top: 0;
+    }
+
+    .ant-input-suffix {
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .ant-input-password {
+    box-shadow: none;
+  }
+}

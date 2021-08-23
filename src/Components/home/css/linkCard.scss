@@ -1,0 +1,81 @@
+.linkCard {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  position: relative;
+
+  &:hover {
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+
+    .linkCard--delete {
+      display: block !important;
+    }
+  }
+  &-points {
+    border: 1px solid #a7a7a7;
+    @extend %displayFull;
+    min-width: 82px;
+    height: 82px;
+    border-radius: 4px;
+    background-color: #ececec;
+    margin-right: 20px;
+    &__count {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  &-content {
+    @extend %displayColumn;
+    flex: 1;
+
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    &__url {
+      flex: 1;
+      color: #b3aaaa;
+      cursor: pointer;
+      word-wrap: break-word;
+      max-width: 330px;
+      margin-bottom: 10px;
+    }
+
+    &-btn {
+      @extend %displayBetweenCenter;
+      width: 100%;
+      max-width: 250px;
+
+      &-vote {
+        @extend %displayCenter;
+        cursor: pointer;
+        .material-icons {
+          margin-right: 8px;
+          color: #c9c1c1;
+        }
+        &__text {
+          font-weight: 600;
+          color: #a59f9f;
+        }
+      }
+    }
+  }
+
+  &--delete {
+    color: red;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+.home {
+  min-height: 100vh;
+  @extend %displayColumn;
+  padding: 20px;
+  margin: auto;
+  max-width: 500px;
+
+  &-createBtn {
+    @extend %displayCenter;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    min-width: 330px;
+
+    &-icon {
+      background-color: #ececec;
+      border-radius: 4px;
+      border: 1px solid #d9d9d9;
+      padding: 15px;
+      margin-right: 20px;
+
+      span {
+        font-size: 50px;
+      }
+    }
+    &__text {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  &-line {
+    height: 2px;
+    background-color: #eaeaea;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .formSelectBox {
+    width: 200px;
+  }
+
+  .ant-pagination {
+    @extend %displayCenterCenter;
+    &-item {
+      @extend %displayCenterCenter;
+    }
+  }
+}

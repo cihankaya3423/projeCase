@@ -1,0 +1,62 @@
+.confirmModal {
+  &-container {
+    @extend %displayColumn;
+  }
+
+  .ant-modal-body {
+    padding: 24px 24px 20px;
+  }
+
+  .ant-modal-confirm-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .ant-btn {
+    border-radius: 4px;
+    border: none;
+    background: #4caf50;
+    &:hover {
+      background: #338d36;
+    }
+    span {
+      color: #fff;
+    }
+  }
+
+  &--success {
+    .ant-modal-confirm-title {
+      color: $success-green;
+    }
+  }
+
+  &--warning {
+    .ant-modal-confirm-title {
+      color: $warning-yellow;
+    }
+  }
+
+  &--error {
+    .ant-modal-confirm-title {
+      color: $error-red;
+    }
+  }
+
+  &--info {
+    .ant-modal-confirm-title {
+      color: $info-blue;
+    }
+  }
+
+  &--confirm {
+    .ant-modal-confirm-title {
+      color: #000;
+    }
+    .ant-btn:nth-child(1) {
+      background: #dd3c30;
+      &:hover {
+        background: #c42e24;
+      }
+    }
+  }
+}

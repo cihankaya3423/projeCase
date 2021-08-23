@@ -1,0 +1,9 @@
+React projesidir
+ant.design kullanılmıştır
+sass kullanılmıştır
+ 
+npm i : yaparak npm dosyalarını yükleyin
+npm start : projeyi ayağa kaldırabilirsiniz 
+
+
+

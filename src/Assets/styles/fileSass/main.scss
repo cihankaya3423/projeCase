@@ -1,0 +1,14 @@
+@import "utils";
+@import "reset";
+@import "antCustom";
+
+// Partner components
+
+// @import "../partnerComponents/messages/confirmModal";
+@import "../partnerComponents/loading/loading";
+
+//form elementleri
+@import "../partnerComponents/formElement/formElementLabel";
+@import "../partnerComponents/formElement/formTextInput";
+@import "../partnerComponents/formElement/formSelectBox";
+@import "../partnerComponents/formElement/formSubmitButton";

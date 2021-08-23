@@ -1,0 +1,226 @@
+.ant-form {
+  width: 100%;
+}
+
+// popover
+.ant-popover-inner {
+  border-radius: 5px;
+
+  &-content {
+    padding: 5px;
+  }
+}
+
+//FormSelectBox için yapıldı
+.ant-select-dropdown {
+  padding: 10px 5px 10px 5px !important;
+  z-index: 99999;
+  .rc-virtual-list-holder {
+    @extend %scrollYBlue;
+  }
+  //ant scroll iptal ediyor.
+  .rc-virtual-list-scrollbar {
+    display: none;
+  }
+
+  border-radius: 6px;
+  box-shadow: 2px 12px 38px -1px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.ant-select-item-option {
+  padding: 4px 14px !important;
+  min-height: 29px !important;
+  align-items: center;
+  &-content {
+    display: block;
+    height: 100%;
+    line-height: 1.44;
+    font-weight: 500;
+    font-size: $form-fontSize;
+    font-weight: normal !important;
+    color: $form-fontColor;
+    white-space: normal;
+  }
+}
+
+//FormTimePicker için yapıldı
+.ant-picker {
+  &-time-panel-column {
+    @extend %scrollYBlue;
+    width: 64px;
+  }
+
+  &-ranges {
+    @extend %displayCenter;
+  }
+
+  &-now {
+    border: 1px solid $form-border;
+    height: 24px;
+    display: flex !important;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 2px;
+
+    &:hover {
+      border: solid 1px $form-border-focus;
+    }
+
+    &-btn {
+      font-size: 14px;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &-ok {
+    width: 100%;
+    button {
+      width: 100%;
+      font-size: 15px;
+      border: solid 1px $form-border;
+      color: $form-fontColor;
+      background-color: #ffffff;
+      &:focus {
+        border: solid 1px $form-border-focus;
+        background-color: transparent;
+      }
+
+      &:hover {
+        border: solid 1px $form-border-focus;
+        color: $form-fontColor;
+        background-color: transparent;
+      }
+      span {
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// date picker
+.ant-picker-today-btn {
+  color: $form-fontColor;
+
+  &:hover {
+    color: $form-fontColor;
+  }
+}
+
+.ant-picker-cell-selected {
+  .ant-picker-cell-inner {
+    background-color: $form-datePicker-select-bg !important;
+  }
+}
+
+.ant-picker-cell-today {
+  .ant-picker-cell-inner::before {
+    border-color: $form-datePicker-select-bg !important;
+  }
+}
+
+.ant-picker-dropdown {
+  z-index: 99999 !important;
+}
+
+// dropdown
+
+.ant-dropdown {
+  z-index: 99999;
+  ul {
+    border-radius: 4px;
+  }
+
+  &-menu {
+    padding: 0;
+  }
+}
+
+//ant  button
+%antBtnGeneralContainer {
+  @extend %displayCenterCenter;
+  width: 100%;
+  min-height: 40px;
+  border-radius: 35px;
+  padding: 0 17px;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+
+  &[disabled] {
+    border-color: transparent !important;
+    span {
+      color: #fff;
+    }
+  }
+
+  & span {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+  }
+
+  .ant-form-item {
+    width: 100%;
+  }
+}
+
+//red
+.ant-redBtn {
+  background-color: rgb(146, 14, 14);
+  @extend %antBtnGeneralContainer;
+
+  & span {
+    color: #fff;
+  }
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid rgb(146, 14, 14);
+
+    & span {
+      color: rgb(146, 14, 14) !important;
+    }
+  }
+}
+
+// köşeli mavi
+.ant-angularBlue {
+  background-color: #04264d;
+  @extend %antBtnGeneralContainer;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  & span {
+    color: #fff;
+  }
+  &:hover,
+  &:focus {
+    background-color: #04264d;
+  }
+}
+
+// ant form  failed
+.ant-form-item-explain {
+  @extend %displayCenter;
+  div {
+    color: $error-red;
+    font-size: 15.5px;
+  }
+}
+
+.ant-form-item-has-error {
+  .ant-input:hover,
+  .ant-input:focus {
+    box-shadow: none !important;
+  }
+}
+
+// notification message
+.ant-notification {
+  z-index: 99999;
+}

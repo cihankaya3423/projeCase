@@ -1,0 +1,133 @@
+.formSelectBox {
+  width: 100%;
+
+  .ant-form-item-control-input {
+    min-height: 0;
+  }
+  .ant-select-selection-placeholder {
+    line-height: $form-height !important;
+  }
+  &__select {
+    margin-top: 6px;
+    border-radius: 4px;
+    background-color: $form-bg !important;
+    color: $form-fontColor;
+    line-height: 1.44;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    font-size: $form-fontSize;
+
+    &.ant-select-focused {
+      .ant-select-selector {
+        border: solid 1px $form-border-focus !important;
+      }
+    }
+
+    &:hover {
+      .ant-select-selector {
+        border: solid 1px $form-border-focus !important;
+      }
+    }
+
+    .ant-select {
+      &-arrow {
+        right: 12px;
+        top: $form-height / 2;
+
+        svg {
+          font-size: 14px;
+        }
+      }
+
+      &-selection {
+        &-search-input {
+          height: 100% !important;
+          font-size: $form-fontSize;
+          line-height: $form-height;
+        }
+
+        &-placeholder {
+          font-size: $form-fontSize;
+          display: block;
+          padding-left: 12px !important;
+        }
+        &-item {
+          padding: 4px 12px !important;
+          @extend %displayCenter;
+          font-weight: normal;
+          color: $form-fontColor;
+
+          font-size: $form-fontSize;
+        }
+      }
+      &-selector {
+        padding: 0 11px 0 0 !important;
+        border-radius: 4px !important;
+        border: solid 1px $form-border !important;
+        outline: none;
+        box-shadow: none !important;
+        background-color: $form-bg !important;
+      }
+    }
+    &.ant-select-disabled {
+      .ant-select-selector {
+        background: #f7f6f6 !important;
+      }
+      &:hover {
+        .ant-select-selector {
+          background: #fff !important;
+        }
+      }
+      .ant-select-selection-item {
+        color: rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .ant-select-selector {
+    min-height: $form-height;
+  }
+
+  .formTextInput {
+    width: 100% !important;
+  }
+
+  &-multiple {
+    .ant-select-selection {
+      &-placeholder {
+        padding-left: 0 !important;
+      }
+      &-item {
+        margin: 4px;
+        border: 1px solid $form-border;
+        border-radius: 4px;
+        display: flex;
+        max-width: 93%;
+
+        &-content {
+          color: $form-fontColor;
+          letter-spacing: 0.3px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    svg {
+      font-size: 11px;
+    }
+  }
+
+  .ant-select-clear {
+    width: 15px;
+    height: 15px;
+    z-index: 100;
+
+    svg {
+      font-size: 13px;
+    }
+  }
+  //other altındaki boşluğu alıyor
+  .ant-row:nth-child(3) {
+    margin-bottom: 0;
+  }
+}

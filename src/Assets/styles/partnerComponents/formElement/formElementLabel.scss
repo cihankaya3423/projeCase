@@ -1,0 +1,14 @@
+.formElementLabel {
+  font-size: $form-labelFontSize;
+  color: $form-labelColor;
+  font-weight: 500;
+  line-height: 1.69;
+  display: block;
+
+  &.required {
+    &:after {
+      content: " *";
+      color: $error-red;
+    }
+  }
+}
